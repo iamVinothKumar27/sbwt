@@ -1,75 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <title>Star Blind Welfare Trust</title>
-      <link href="logo.jpg" rel="icon">
-      <link href="logo.jpg" rel="apple-touch-icon">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/animate.css">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="css/magnific-popup.css">
-      <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-      <link rel="stylesheet" href="css/jquery.timepicker.css">
-      <link rel="stylesheet" href="css/flaticon.css">
-      <link rel="stylesheet" href="css/style.css">
-      
-      <style>
-          .img-fluid {
-              max-width: 100%;
-              height: auto;
+<head>
+    <title>Star Blind Welfare Trust</title>
+    <link href="logo.jpg" rel="icon">
+    <link href="logo.jpg" rel="apple-touch-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/mangific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .about-container {
+          display: flex; /* Enable flexbox */
+          align-items: center; /* Center items vertically */
+          background: #f4f4f4; /* Light grey background */
+          border: 2px solid #fd645b; /* Red border */
+          padding: 20px;
+          margin: 20px auto;
+          width: 80%;
+          box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+          border-radius: 10px;
+      }
+
+      .about-content {
+          width: 50%; /* Half the container for text */
+          padding-right: 20px; /* Spacing between text and image */
+      }
+
+      .about-image {
+          width: 50%; /* Half the container for the image */
+          height: auto;
+          border-radius: 8px; /* Rounded corners for the image */
+          margin-left: 20px; /* Spacing between text and image */
+      }
+
+      @media (max-width: 768px) {
+          .about-container {
+              flex-direction: column; /* Stack elements vertically on small screens */
           }
-  
-          @media (max-width: 768px) {
-              .hero-wrap {
-                  height: auto; 
-              }
-  
-              .slider-container {
-                  flex-direction: column;
-              }
-  
-              .wrap-about, .founder-photo-container {
-                  flex-direction: column;
-                  align-items: center;
-                  text-align: center;
-              }
-  
-              .wrap-about {
-                  padding: 20px;
-              }
-  
-              .founder-photo-container {
-                  width: 80%;
-                  margin-top: 20px;
-              }
-  
-              .navbar-collapse {
-                  text-align: center;
-              }
-  
-              .social-media, .phone {
-                  text-align: center;
-                  margin-top: 10px;
-              }
-  
-              .nav-item {
-                  margin-bottom: 10px;
-              }
-              
-              .slide img {
-                  width: 100%;
-                  height: auto;
-              }
+
+          .about-content, .about-image {
+              width: 100%; /* Full width for both elements */
+              margin: 10px 0; /* Space above and below each element */
           }
-      </style>
-  </head>
+      }
+  </style>
+</head>
 <body>
 
   <!-- Navbar -->
@@ -217,30 +201,21 @@ setInterval(() => moveSlide(1), 4000);
 
 
   <!-- About Us Section -->
-  <section class="ftco-section py-5">
+  <section class="ftco-section">
     <div class="container">
-      <div class="row justify-content-center"> <!-- Centering the Content -->
-        <img src="aboutimg.jpg" alt="About Us" class="img-fluid mb-4" style="width: 250px;top: 100px; position: absolute;left: 5%; height: auto; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);">
-
-        <!-- Text Section -->
-        <div class="col-md-8 text-center"> <!-- Adjusted Width & Centered -->
-          <div class="heading-section">
-            <h2 class="mb-4">ABOUT US</h2>
-            <p>Star Blind Welfare Trust was established in 2007 with the aim of helping the poor and needy, all kinds of differently abled people, students, mothers abandoned by their husbands, and the elderly. This trust has been providing excellent services for the past 18 years. Our trust provides services such as providing necessary aids for studying to differently abled students, employment opportunities for differently abled people, necessary accessories for all kinds of differently abled people, and providing loans to mothers abandoned by their husbands to encourage self-employment. Our trust is also proud to provide all the necessary assistance to such differently abled people.. add this content for about us</p>
-
-
-            <!-- Contact Info -->
-            <h4 class="mt-4">📧 Email: <a href="mailto:info@blindwelfaretrust.com">
-              Mohansocialworker@gmail.com </a></h4>
-            <h4>📞 Contact: <a href="tel:+23923929210">9942523094 830098125 </a></h4>
-
-          </div>
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Star Blind Welfare Trust was established in 2007 with the aim of helping the poor and needy, all kinds of differently abled people, students, mothers abandoned by their husbands, and the elderly. This trust has been providing excellent services for the past 18 years. Our trust provides services such as providing necessary aids for studying to differently abled students, employment opportunities for differently abled people, necessary accessories for all kinds of differently abled people, and providing loans to mothers abandoned by their husbands to encourage self-employment. Our trust is also proud to provide all the necessary assistance to such differently abled people.</p>
+                <p><strong>📧 Email:</strong> Mohansocialworker@gmail.com</p>
+                <p><strong>📞 Contact:</strong> 9942523094, 8300098125</p>
+            </div>
+            <img src="aboutimg.jpg" alt="About Us" class="about-image">
         </div>
-
-      </div>
     </div>
-  </section>
-
+</section>
+</section>
+  
   <footer class="footer">
     <div class="container">
         <div class="row">
