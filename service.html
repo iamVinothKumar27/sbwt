@@ -299,18 +299,17 @@
 
 <br>
 
-<div class="button-group" style="padding-left: 550px;">
-    <a class="btn btn-primary" onclick="togglePDF()">View Activities</a>
-    <a style="padding-left: 20px;"></a>
-    <a class="btn btn-secondary" href="service.pdf" download="servicepdf.pdf">Download</a>
-</div>
-
-<!-- PDF Display Section -->
-<div id="pdfContainer" style="display: none; margin-top: 20px;">
-    <iframe id="pdfFrame" width="100%" height="500px"></iframe>
-</div>
-
-<script>
+<div class="button-group">
+	<a class="btn btn-primary" onclick="togglePDF()">View Activities</a>
+	<a download class="btn btn-secondary" href="service.pdf">Download</a>
+  </div>
+  
+  <!-- Add this section to display the PDF -->
+  <div id="pdfContainer" style="display:none; margin-top: 20px;">
+	<iframe id="pdfFrame" width="100%" height="500px"></iframe>
+  </div>
+  
+  <script>
 	function togglePDF() {
 		var pdfContainer = document.getElementById("pdfContainer");
 		var pdfFrame = document.getElementById("pdfFrame");
@@ -322,7 +321,14 @@
 		}
 	}
 	</script>
-
+	<style>
+		.button-group {
+		  display: flex;
+		  justify-content: center; /* Centers horizontally */
+		  gap: 10px; /* Space between buttons */
+		  margin-top: 20px;
+		}
+	  </style>
 <br>
 
 	<section class="ftco-hireme bg-secondary">
